@@ -1,0 +1,27 @@
+{
+  "collectionName": "components_committee_components_committee_members",
+  "info": {
+    "displayName": "Committee Member",
+    "icon": "user"
+  },
+  "options": {},
+  "attributes": {
+    "person": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::person.person"
+    },
+    "committeePosition": {
+      "type": "string",
+      "required": true
+    },
+    "roleDescription": {
+      "type": "text"
+    },
+    "order": {
+      "type": "integer",
+      "default": 0
+    }
+  },
+  "config": {}
+}

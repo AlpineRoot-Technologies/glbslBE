@@ -1,0 +1,46 @@
+{
+  "kind": "singleType",
+  "collectionName": "member_welfare_servicees",
+  "info": {
+    "singularName": "member-welfare-servicee",
+    "pluralName": "member-welfare-servicees",
+    "displayName": "Member Welfare Servicee"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {
+    "i18n": {
+      "localized": true
+    }
+  },
+  "attributes": {
+    "title": {
+      "type": "string",
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      },
+      "required": true
+    },
+    "description": {
+      "type": "blocks",
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      }
+    },
+    "welfareServices": {
+      "type": "component",
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      },
+      "component": "service-components.service-feature",
+      "repeatable": true
+    }
+  }
+}

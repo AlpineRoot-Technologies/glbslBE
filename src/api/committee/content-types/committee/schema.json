@@ -1,0 +1,46 @@
+{
+  "kind": "collectionType",
+  "collectionName": "committees",
+  "info": {
+    "singularName": "committee",
+    "pluralName": "committees",
+    "displayName": "Committee"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {
+    "i18n": {
+      "localized": true
+    }
+  },
+  "attributes": {
+    "name": {
+      "type": "string",
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      },
+      "required": true
+    },
+    "description": {
+      "type": "blocks",
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      }
+    },
+    "members": {
+      "type": "component",
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      },
+      "component": "committee-components.committee-member",
+      "repeatable": true
+    }
+  }
+}
